@@ -33,3 +33,7 @@ Para executar a API backend, siga as instruções no https://github.com/yanna-to
 
 ## API Endpoints
 A especificação completa das rotas da API pode ser encontrada no [SwaggerHub: Your Random Facts](https://app.swaggerhub.com/apis/YannaTorres/your-random-facts/1.0.0-oas3).
+
+## Vídeo
+https://github.com/user-attachments/assets/f9fd4f50-e936-44e9-8df1-7f86537941b4
+
