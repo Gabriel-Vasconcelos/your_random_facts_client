@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+# Your Random Facts Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação web desenvolvida como parte de um trabalho em equipe do curso de Sistemas e Mídias Digitais da Universidade Federal do Ceará, na cadeira de Sistemas Distribuídos. O objetivo é consumir uma API criada por nós e fornecer uma interface amigável para usuários interagirem com fatos aleatórios. 
 
-Currently, two official plugins are available:
+A aplicação permite que os usuários criem perfis, descubram fatos aleatórios, obtenham o fato do dia e salvem fatos interessante
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
+- **Criar Usuário:** Crie um perfil de usuário fornecendo nome e nome de usuário.
+- **Descobrir Fatos Aleatórios:** Obtenha fatos aleatórios a qualquer momento.
+- **Fato do Dia:** Veja o fato especial do dia.
+- **Salvar Fatos:** Salve os fatos que achar interessantes.
+- **Consultar Fatos Salvos:** Visualize e gerencie os fatos salvos anteriormente.
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
+- **Frontend:** React (Vite), Tailwind CSS, Shadcn
+- **Backend:** API Python desenvolvida com Flask e SQLite
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Repositório do Projeto Backend:
+Para executar a API backend, siga as instruções no https://github.com/yanna-torres/your_random_facts
 
-- Configure the top-level `parserOptions` property like this:
+## Passos para Instalação
+1. Siga o passo a passo para instalar e rodar o [projeto backend](https://github.com/yanna-torres/your_random_facts)
+2. Clone o repositório
+   ```
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   cd nome-do-repositorio
+3. Instale os pacotes
+   ```
+   npm install
+4. Rode o projeto
+   ```
+   npm run dev
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## API Endpoints
+A especificação completa das rotas da API pode ser encontrada no [SwaggerHub: Your Random Facts](https://app.swaggerhub.com/apis/YannaTorres/your-random-facts/1.0.0-oas3).
