@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message Fact {
+  string id = 1;
+  string fact_id = 2;
+  string language = 3;
+  string permalink = 4;
+  string source = 5;
+  string source_url = 6;
+  string text = 7;
+}
+
+message FactList {
+  repeated Fact facts = 1;
+}
