@@ -10,6 +10,7 @@ A aplicação permite que os usuários criem perfis, descubram fatos aleatórios
 - **Fato do Dia:** Veja o fato especial do dia.
 - **Salvar Fatos:** Salve os fatos que achar interessantes.
 - **Consultar Fatos Salvos:** Visualize e gerencie os fatos salvos anteriormente.
+- **Deletar Fatos Salvos:** Delete os fatos salvos anteriormentes.
 
 ## Tecnologias Utilizadas
 - **Frontend:** React (Vite), Tailwind CSS, Shadcn
