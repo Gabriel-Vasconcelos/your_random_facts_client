@@ -136,26 +136,18 @@ const Header = () => {
     const username = usernameRef.current?.value;
 
     try {
-      const response = await fetch(`http://127.0.0.1:5000/facts/proto/${username}`, {
-        method: "GET",
-        headers: {
-          "Accept": "application/octet-stream", // O tipo de resposta esperada do servidor
-        },
-      });
+      const response = await fetch(`http://127.0.0.1:5000/facts/proto/${username}`);
 
       if (!response.ok) {
         const errorData = await response.json();
         throw new Error(errorData.error);
       }
 
-      // Obter o buffer da resposta
       const buffer = await response.arrayBuffer();
       const reader = new Uint8Array(buffer);
 
-      // Decodificar a resposta usando FactList
       const factList = FactList.decode(reader);
 
-      // Transformar FactList em array de Facts
       const facts = factList.facts.map((fact) => Fact.fromObject(fact));
 
       //setFactsByUser(facts);
