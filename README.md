@@ -2,7 +2,9 @@
 
 Este projeto é uma aplicação web desenvolvida como parte de um trabalho em equipe do curso de Sistemas e Mídias Digitais da Universidade Federal do Ceará, na cadeira de Sistemas Distribuídos. O objetivo é consumir uma API criada por nós e fornecer uma interface amigável para usuários interagirem com fatos aleatórios. 
 
-A aplicação permite que os usuários criem perfis, descubram fatos aleatórios, obtenham o fato do dia e salvem fatos interessante
+A aplicação permite que os usuários criem perfis, descubram fatos aleatórios, obtenham o fato do dia e salvem fatos interessantes.
+
+O relatório completo da atividade pode ser encontrado em: [Relatório da Atividade - API REST e Representação de Dados](https://yanna-torres.notion.site/Relat-rio-da-Atividade-API-REST-e-Representa-o-de-Dados-7c3a856a8a40425198312037d783d230?pvs=4)
 
 ## Funcionalidades
 - **Criar Usuário:** Crie um perfil de usuário fornecendo nome e nome de usuário.
